@@ -16,14 +16,15 @@ rbutton.onclick = function(){
 
 // The main function of the process with all the logic of the collision
 function jumpStart(){
+  // Position coordinates for each of the boxes
   var bluePos = blueBox.getBoundingClientRect();
   var redPos = redBox.getBoundingClientRect();
 
-  // Position coordinates for each of the boxes
-  blueLeft = bluePos.left;
-  redLeft = redPos.left;
-  blueWidth = bluePos.width;
-  redWidth = redPos.width;
+  // Get left position and width for both boxes
+  var blueLeft = bluePos.left;
+  var redLeft = redPos.left;
+  var blueWidth = bluePos.width;
+  var redWidth = redPos.width;
 
   // Logic for the collision
   function collide(){
